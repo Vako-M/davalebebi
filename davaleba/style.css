@@ -1,40 +1,24 @@
-
-
-/* Inline, Block, Inline-block, None */
-
-
-
-#erti {
-    display: inline-block;
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    text-align: center;
-    border-radius: 500%;
-    margin-left: 40%;
-    line-height: 100px;
-   
+body {
+  margin: 5;
+  padding: 5;
+  overflow: hidden;
 }
-#ori {
-    display: inline-block;
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    text-align: center;
-    border-radius: 500%;
-    line-height: 100px;
-   
-}
-#sami {
-    display: inline-block;
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    text-align: center;
-    border-radius: 500%;
-    line-height: 100px;
 
+.moving-background {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://th.bing.com/th/id/OIP.sqcZhopetzuiPGjRJCnQOwHaHW?rs=1&pid=ImgDetMain");
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: moveBackground 7s linear alternate infinite;
+  animation-duration: 10s;
+}
+
+@keyframes moveBackground {
+  from {
+    background-position: 50 center;
+  }
+  to {
+    background-position: -100vw center;
+  }
 }
